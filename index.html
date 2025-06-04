@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Enregistrement d'une consultation</title>
-    <link rel="stylesheet" href="enregistrer.css">
-</head>
-
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style=" background-image=kit.png">
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <header>
@@ -63,71 +61,49 @@
   </div>
 </nav>
         </header><br><br>
-        <form action="consultation.php" method="post" class="row g-3 container">
-
-    <div class="mb-3 row">
-    <label for="staticEmail" class="col-sm-2 col-form-label"><b>ID</b></label>
-    <div class="col-sm-10">
-    <input type="text" name="id" required>
-    </div>
-  </div>
-
-
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Code du patient</b></label>
-    <div class="col-sm-10">
-    <input type="text" name="codepatient" required>
-    </div>
-  </div>
 
 
   
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label"><b>ID du médecin</b></label>
-    <div class="col-sm-10">
-    <input type="text" name="idmedecin" required>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide carousel slide w-50 container d-flex justify-content-center" style="">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="preg.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" id="slide1">
+        <h5>La santé, c'est comme l'argent, on n'en prend conscience que lorsqu'on en manque.</h5>
+        <p>Henri-Frédéric Amiel </p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="pres.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block"  id="slide2">
+        <h5>La santé est un état de complète harmonie du corps et de l'esprit. Lorsque l'on est libre de dysfonctionnement physique et mental, la porte de l'âme s'ouvre.</h5>
+        <p> B.K.S. Iyengar</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="happy.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block"  id="slide">
+        <h5>Pour jouir d'une bonne santé, il faut manger modérément, respirer profondément, travailler intelligemment, se préserver de l'excès et se réjouir toujours.</h5>
+        <p>Bouddha</p>
+      </div>
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
-  
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Poids du patient(kg)</b></label>
-    <div class="col-sm-10">
-    <input type="text" name="poids" required>
-    </div>
-  </div>
+    </body>
 
-
-  
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Hauteur(cm)</b></label>
-    <div class="col-sm-10">
-    <input type="text" name="hauteur" required>
-    </div>
-  </div>
-
-
-  
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Diagnostique</b></label>
-    <div class="col-sm-10">
-    <input type="text" name="diagnostique" required>
-    </div>
-  </div>
-
-  <div class="mb-3 row">
-    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Date de consultation</b></label>
-    <div class="col-sm-10">
-    <input type="date" name="date_consultation" required>
-    </div>
-  </div>
-
-  <div class="col-auto">
-    <button type="submit" class="btn"><b>Enregistrer</b></button>
-  </div>
-  
-</form>
-</body>
-
-</html>
+    </html>
