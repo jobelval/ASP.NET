@@ -1,0 +1,44 @@
+
+  #nav{
+    background-color: #59C1BD;
+    
+  }
+
+
+  .container {
+    position: relative;
+    width: 70%; /* Largeur de votre choix */
+    margin: 0 auto; /* Centrer horizontalement */
+    border: 2px solid #ccc; /* Bordure */
+    padding: 20px; /* Marge intérieure pour l'espace à l'intérieur de la bordure */
+    border-color: darkcyan;
+}
+
+
+
+  body::before{
+    background-image: url('lo.png');
+    background-repeat: repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1; /* Opacité de l'image de fond */
+  }
+  
+  form{
+    position:absolute;
+  }
+
+  .col-auto{
+    background-color: #59C1BD;
+    border-radius: 10px;
+    
+  }
+
+  .btn{
+    padding: 10px 20px;
+  }
+  

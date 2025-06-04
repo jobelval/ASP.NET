@@ -1,0 +1,36 @@
+/* Vos styles CSS ici */
+#nav{
+    background-color: #59C1BD;
+    position: fixed;
+    
+}
+.container {
+    position: fixed;
+    width: 100%; /* Largeur de votre choix */
+    margin: 0 auto; /* Centrer horizontalement */
+    margin-top: 1em;
+    margin-left: 40em;
+    margin-bottom: 1em;
+   
+}
+body::before{
+    background-image: url('lo.png');
+    background-repeat: repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1; /* Opacité de l'image de fond */
+}
+form{
+    position:absolute;
+}
+.col-auto{
+    background-color: #59C1BD;
+    border-radius: 10px;
+}
+.btn{
+    padding: 10px 20px;
+}
